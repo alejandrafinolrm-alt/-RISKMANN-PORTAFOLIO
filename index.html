@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riskmann | Portafolio Integral: Cumplimiento PESV, Resolución de Conflictos & Plataforma Tecnológica</title>
+  <meta name="description"
+    content="Portafolio Corporativo Integral de Riskmann (SOFU BIC S.A.S): Cumplimiento obligatorio del PESV bajo Resolución 40595 de 2022, resolución de conflictos en la cadena de hidrocarburos, El Método Infalible y arquitectura cloud de la plataforma.">
+
+  <!-- Hojas de Estilo -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon / Brand Icon -->
+  <link rel="icon" type="image/svg+xml" href="Imágenes/logo/riskmann-logo-color.svg">
+</head>
+
+<body>
+
+  <!-- =========================================================================
+       1. ENCABEZADO / NAVBAR CORPORATIVO FIJO (SINGLE PAGE NAVIGATION)
+       ========================================================================= -->
+  <header class="site-header" id="top-header">
+    <div class="brand-stripe"></div>
+    <div class="container header-inner">
+
+      <!-- Logotipo Vectorial Oficial de Riskmann -->
+      <a href="#top-header" class="logo-brand" title="Riskmann by SOFU BIC S.A.S.">
+        <svg class="logo-svg" viewBox="0 0 1081.22 322.9" xmlns="http://www.w3.org/2000/svg" aria-label="Riskmann Logo">
+          <!-- Isologo: Círculos superpuestos y geometría oficial -->
+          <path fill="#E6342E" opacity="0.92"
+            d="M81.76 94.48C36.61 94.48 0 131.09 0 176.25C0 184.42 1.21 192.3 3.44 199.74C11.18 187.95 24.51 180.16 39.66 180.16C63.57 180.16 82.95 199.54 82.95 223.45C82.95 236.83 76.89 248.78 67.36 256.72C72.04 257.55 76.85 258.01 81.76 258.01C126.92 258.01 163.53 221.4 163.53 176.25C163.53 131.09 126.92 94.48 81.76 94.48Z" />
+          <path fill="#233976"
+            d="M115.94 159.54L37.05 59.15C33.17 54.2 25.23 56.95 25.23 63.24L25.23 182.63C30.44 180.79 36.12 179.9 42.04 180.22C59.4 181.16 74.53 192.95 80.45 209.3C83.02 216.4 83.42 223.23 82.5 229.64L202.52 229.64L202.52 60.4C202.52 53.98 194.3 51.32 190.54 56.52L115.94 159.54Z" />
+          <path fill="#4965AD" opacity="0.49"
+            d="M245.2 62.52C246.45 68.13 247.11 73.96 247.11 79.95C247.11 124.1 211.32 159.9 167.16 159.9C123.01 159.9 87.21 124.1 87.21 79.95C87.21 35.79 123.01 0 167.16 0C205.33 0 237.25 26.75 245.2 62.52Z" />
+          <path fill="#233976"
+            d="M66.95 214.72C66.95 227.24 56.8 237.4 44.27 237.4C31.75 237.4 21.59 227.24 21.59 214.72C21.59 202.19 31.75 192.04 44.27 192.04C56.8 192.04 66.95 202.19 66.95 214.72Z" />
+          <!-- Tipografía Corporativa "RiskMann" y "by SOFU" -->
+          <path fill="#1A484D"
+            d="M899.29 242.31C899.29 242.89 899.4 243.47 899.51 244C900.4 247.21 903.09 249.43 906.47 249.43C911.32 249.43 914.22 245.47 914.22 239.62C914.22 234.5 911.58 230.13 906.63 230.13C903.46 230.13 900.51 232.29 899.56 235.82C899.45 236.35 899.29 236.98 899.29 237.72L899.29 242.31ZM894.49 252.54C894.6 250.8 894.71 248.22 894.71 245.95L894.71 215.09L899.29 215.09L899.29 231.13L899.4 231.13C901.04 228.28 903.99 226.43 908.1 226.43C914.43 226.43 918.91 231.71 918.86 239.46C918.86 248.58 913.11 253.12 907.42 253.12C903.72 253.12 900.77 251.7 898.87 248.32L898.71 248.32L898.5 252.54L894.49 252.54Z" />
+          <path fill="#1A484D"
+            d="M926.03 227.01L931.62 242.1C932.2 243.78 932.83 245.79 933.25 247.32L933.36 247.32C933.84 245.79 934.36 243.84 935 241.99L940.06 227.01L944.96 227.01L938 245.21C934.68 253.96 932.41 258.45 929.25 261.19C926.98 263.19 924.71 263.98 923.55 264.2L922.39 260.29C923.55 259.92 925.08 259.18 926.45 258.02C927.72 257.02 929.3 255.23 930.35 252.86C930.57 252.38 930.72 252.01 930.72 251.75C930.72 251.48 930.62 251.12 930.41 250.54L920.97 227.01L926.03 227.01Z" />
+          <path fill="#41425B"
+            d="M305.18 145.54L315.76 145.54C322.7 145.54 328.05 144.24 331.8 141.64C335.56 139.04 337.44 134.74 337.44 128.74C337.44 123.53 335.76 119.63 332.41 117.02C329.05 114.42 324.37 113.12 318.37 113.12L305.18 113.12L305.18 145.54ZM369.01 202.41L369.01 203.77L342.07 203.77L314.45 163.7L305.18 163.7L305.18 203.77L281.76 203.77L281.76 93.77L318.6 93.77C328.33 93.77 336.44 95.27 342.95 98.27C349.46 101.27 354.3 105.34 357.47 110.49C360.63 115.64 362.22 121.5 362.22 128.06C362.22 135.76 360.3 142.4 356.45 148C352.6 153.61 346.94 157.77 339.47 160.48L369.01 202.41Z" />
+          <path fill="#41425B"
+            d="M382.08 203.77L382.08 127.89L405 125.68L405 203.77L382.08 203.77ZM385.82 114.05C383.56 112.75 381.74 111.03 380.39 108.87C379.03 106.73 378.35 104.35 378.35 101.75C378.35 99.15 379.03 96.74 380.39 94.53C381.74 92.33 383.56 90.57 385.82 89.27C388.08 87.97 390.51 87.32 393.12 87.32C395.84 87.32 398.35 87.97 400.67 89.27C402.99 90.57 404.83 92.33 406.19 94.53C407.55 96.74 408.22 99.15 408.22 101.75C408.22 104.35 407.55 106.73 406.19 108.87C404.83 111.03 402.99 112.75 400.67 114.05C398.35 115.36 395.84 116.01 393.12 116.01C390.51 116.01 388.08 115.36 385.82 114.05Z" />
+          <path fill="#41425B"
+            d="M433.1 203.51C427.38 201.76 422.03 199.13 417.05 195.62L426.77 180.85C430.97 183.91 435.23 186.09 439.54 187.39C443.86 188.69 448 189.34 451.98 189.34C455.73 189.34 458.49 188.77 460.25 187.64C462 186.51 462.88 184.98 462.88 183.06C462.88 181.82 462.55 180.71 461.86 179.75C461.18 178.79 459.79 177.82 457.69 176.86C455.58 175.9 452.49 174.85 448.4 173.72L443.46 172.36C435.28 170.1 429.4 167.16 425.82 163.54C422.24 159.92 420.45 154.99 420.45 148.77C420.45 144.02 421.75 139.83 424.36 136.21C426.96 132.59 430.64 129.78 435.39 127.8C440.14 125.83 445.57 124.83 451.68 124.83C463.23 124.83 473.69 127.61 483.09 133.15L474.14 147.92C469.45 145.54 465.49 143.9 462.28 143C459.07 142.09 455.63 141.64 451.96 141.64C449.1 141.64 446.94 142.15 445.52 143.16C444.08 144.18 443.37 145.49 443.37 147.07C443.37 148.2 443.65 149.14 444.22 149.87C444.8 150.61 445.85 151.29 447.4 151.91C448.95 152.53 451.38 153.3 454.7 154.2L460.37 155.73C469.2 157.99 475.64 161.16 479.7 165.23C483.77 169.31 485.81 174.46 485.81 180.68C485.81 185.55 484.59 189.91 482.15 193.75C479.72 197.6 475.99 200.63 470.95 202.83C465.91 205.04 459.77 206.14 452.53 206.14C445.29 206.14 438.81 205.27 433.1 203.51Z" />
+          <path fill="#41425B"
+            d="M546.75 162.35L576.28 202.41L576.28 203.77L549.21 203.77L522.47 165.74L522.47 203.77L499.55 203.77L499.55 86.98L522.47 84.77L522.47 161.67L550.23 127.38L574.76 127.38L574.76 128.57L546.75 162.35Z" />
+          <path fill="#41425B"
+            d="M700.2 100.13L700.2 203.77L690.7 203.77L690.7 108.54C689.01 112.39 686.94 116.63 684.48 121.27L651.36 184.24L641.77 184.24L609.15 121.27L607.47 117.88C605.57 114.48 604.05 111.54 602.93 109.05L602.93 203.77L593.43 203.77L593.43 100.13C593.43 96.62 596.28 93.77 599.8 93.77L600.26 93.77C602.84 93.77 605.21 95.2 606.41 97.49L638.08 157.93L640.45 162.69C643.51 168.57 645.6 172.87 646.73 175.59C647.75 173.21 649.02 170.47 650.55 167.36C652.08 164.24 653.69 161.1 655.39 157.93L687.71 97.44C688.92 95.18 691.27 93.77 693.84 93.77C697.35 93.77 700.2 96.62 700.2 100.13Z" />
+          <path fill="#41425B"
+            d="M734.79 194.77C737.25 196.92 741 198 746.04 198C750.74 198 755.21 197.15 759.45 195.45C763.69 193.75 767.99 191.32 772.35 188.15L772.35 166.25C760.08 166.48 750.14 168.15 742.53 171.26C734.9 174.38 731.09 179.21 731.09 185.77C731.09 189.62 732.32 192.62 734.79 194.77ZM781.34 153.18L781.34 203.77L773.21 203.77L772.51 195.62C768.23 199.01 763.69 201.53 758.89 203.17C754.1 204.81 749.28 205.64 744.43 205.64C740.03 205.64 736.16 204.84 732.84 203.26C729.51 201.68 726.92 199.44 725.06 196.55C723.19 193.67 722.27 190.3 722.27 186.45C722.27 177.4 726.94 170.67 736.31 166.25C745.67 161.84 757.68 159.52 772.35 159.29L772.35 154.2C772.35 148.43 771.07 144.07 768.54 141.13C766 138.19 762.02 136.72 756.61 136.72C752.33 136.72 748.02 137.42 743.67 138.84C739.33 140.25 734.63 142.6 729.55 145.88L725.49 139.6C735.68 132.59 746.37 129.08 757.57 129.08C773.42 129.08 781.34 137.11 781.34 153.18Z" />
+          <path fill="#41425B"
+            d="M861.29 134.25C865.71 137.71 867.91 143.74 867.91 152.33L867.91 203.77L859.08 203.77L859.08 155.9C859.08 151.37 858.55 147.72 857.47 144.95C856.39 142.18 854.64 140.11 852.21 138.75C849.77 137.39 846.41 136.72 842.11 136.72C838.04 136.72 833.71 137.37 829.12 138.67C824.54 139.97 820.15 141.58 815.97 143.51L815.97 203.77L807.14 203.77L807.14 130.77L815.97 129.76L815.97 136.88C820.27 134.74 824.88 132.9 829.81 131.37C834.73 129.84 839.56 129.08 844.32 129.08C851.22 129.08 856.88 130.81 861.29 134.25Z" />
+          <path fill="#41425B"
+            d="M948.03 134.25C952.45 137.71 954.66 143.74 954.66 152.33L945.83 203.77L945.83 155.9C945.83 151.37 945.29 147.72 944.21 144.95C943.14 142.18 941.38 140.11 938.95 138.75C936.52 137.39 933.15 136.72 928.85 136.72C924.78 136.72 920.45 137.37 915.87 138.67C911.28 139.97 906.9 141.58 902.71 143.51L902.71 203.77L893.88 203.77L893.88 130.77L902.71 129.76L902.71 136.88C907.01 134.74 911.63 132.9 916.55 131.37C921.47 129.84 926.3 129.08 931.06 129.08C937.96 129.08 943.62 130.81 948.03 134.25Z" />
+      </a>
+
+      <!-- Menú de Navegación de Escritorio -->
+      <nav class="nav-menu">
+        <a href="#solucion-riskmann" class="nav-link active">1. Blindaje Digital</a>
+        <a href="#cumplimiento-pesv" class="nav-link">2. Cumplimiento PESV</a>
+        <a href="#metodo-infalible" class="nav-link">3. Método Infalible</a>
+        <a href="#modulos" class="nav-link">4. Módulos Clave</a>
+        <a href="#beneficios" class="nav-link">5. Beneficios &amp; Métricas</a>
+      </nav>
+
+      <!-- Botón Menú Móvil -->
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menú de navegación">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Cajón de Navegación Móvil (Drawer) -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="mobile-drawer-content">
+      <div
+        style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 12px; border-bottom: 1px solid var(--color-border-subtle);">
+        <span style="font-weight: 800; color: var(--color-primary); font-family: var(--font-heading);">Índice
+          Institucional</span>
+        <button id="mobile-drawer-close" style="font-size: 1.5rem; color: var(--color-text-muted);">&times;</button>
+      </div>
+      <a href="#solucion-riskmann" class="nav-link">1. Blindaje Digital (Ley 527/99)</a>
+      <a href="#cumplimiento-pesv" class="nav-link">2. Cumplimiento PESV &amp; Cadena</a>
+      <a href="#metodo-infalible" class="nav-link">3. El Método Infalible</a>
+      <a href="#modulos" class="nav-link">4. Módulos Clave de Plataforma</a>
+      <a href="#beneficios" class="nav-link">5. Beneficios &amp; Métricas SOFU</a>
+      <button class="nav-page-switch btn-print-trigger"
+        style="justify-content: center; margin-top: 10px; cursor: pointer;">
+        <span>Descargar Informe en PDF</span>
+      </button>
+    </div>
+  </div>
+
+  <main>
+    <!-- =========================================================================
+         2. HERO CORPORATIVO: CUMPLIMIENTO OBLIGATORIO Y RESOLUCIÓN DE CONFLICTOS
+         ========================================================================= -->
+    <section class="hero-corporate">
+      <div class="container">
+
+        <div class="hero-overline">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2L1 21h22L12 2zm0 3.99L19.53 19H4.47L12 5.99zM11 10h2v4h-2zm0 6h2v2h-2z" />
+          </svg>
+          PORTAFOLIO INTEGRAL· PESV · RISKMANN
+        </div>
+
+        <h1 class="hero-title">
+          Cumplimiento Obligatorio del PESV:<br>
+          <span class="text-gradient">El Estándar Jurídico que Resuelve Conflictos en Hidrocarburos</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          El Plan Estratégico de Seguridad Vial bajo la <strong>Resolución 40595 de 2022</strong> no es un simple
+          requisito documental; es la norma técnica vinculante que gobierna y desarticula las controversias entre
+          operadoras, transportistas y contratistas. Conozca cómo <strong>Riskmann</strong> transforma esta obligación
+          legal en blindaje probatorio y gobernanza digital continua en una infraestructura 100% en la nube.
+        </p>
+
+
+
+        <!-- Botones de Navegación del Hero -->
+        <div style="margin-top: 24px;">
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         3. TABLA DE CONTENIDO (TOC) INTERACTIVA EJECUTIVA UNIFICADA
+         ========================================================================= -->
+    <div class="container">
+      <nav class="toc-executive-bar" aria-label="Índice Unificado del Portafolio">
+        <div class="toc-header">
+          <div class="toc-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="8" y1="6" x2="21" y2="6" />
+              <line x1="8" y1="12" x2="21" y2="12" />
+              <line x1="8" y1="18" x2="21" y2="18" />
+              <line x1="3" y1="6" x2="3.01" y2="6" />
+              <line x1="3" y1="12" x2="3.01" y2="12" />
+              <line x1="3" y1="18" x2="3.01" y2="18" />
+            </svg>
+            <span>Índice Ejecutivo Integral — Riskmann by SOFU</span>
+          </div>
+        </div>
+        <div class="toc-list">
+          <a href="#solucion-riskmann" class="toc-item-link active">
+            <span class="toc-num">1</span>
+            <span class="toc-text">Solución Riskmann &amp; Blindaje (Ley 527)</span>
+          </a>
+          <a href="#cumplimiento-pesv" class="toc-item-link">
+            <span class="toc-num">2</span>
+            <span class="toc-text">Cumplimiento PESV &amp; Cadena Hidrocarburos</span>
+          </a>
+          <a href="#metodo-infalible" class="toc-item-link">
+            <span class="toc-num">3</span>
+            <span class="toc-text">El Método Infalible (Cero Errores)</span>
+          </a>
+          <a href="#modulos" class="toc-item-link">
+            <span class="toc-num">4</span>
+            <span class="toc-text">Módulos Clave de la Plataforma</span>
+          </a>
+          <a href="#beneficios" class="toc-item-link">
+            <span class="toc-num">5</span>
+            <span class="toc-text">Beneficios Diferenciales &amp; Métricas</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+
+    <!-- =========================================================================
+         4. SESIÓN 1: CÓMO RISKMANN RESUELVE ESTOS CONFLICTOS Y BLINDAJE DIGITAL (LEY 527)
+         ========================================================================= -->
+    <section class="section-padding" id="solucion-riskmann" style="background-color: #F8FAFC;">
+      <div class="container">
+
+        <div class="section-header-block">
+          <div class="section-tag blue-tag">
+            <span class="brand-stripe-vertical" style="height: 16px; display: inline-block;"></span>
+            SESIÓN 01 · SOLUCIÓN TECNOLÓGICA Y BLINDAJE DIGITAL RISKMANN
+          </div>
+          <h2 class="section-heading-main">Cómo Riskmann Desarticula los Conflictos y Cumple el PESV</h2>
+          <p class="section-lead-text">
+            <strong>Riskmann</strong> es una plataforma especializada que digitaliza los 24 pasos del PESV y los
+            traduce en una <strong>cadena de custodia probatoria digital inalterable</strong> sustentada en los
+            principios jurídicos de la <strong>Ley 527 de 1999</strong> (mensajes de datos, integridad, autenticidad y
+            no repudio) y el <strong>Código General del Proceso (Ley 1564 de 2012)</strong>:
+          </p>
+        </div>
+
+        <div class="proof-banner">
+          <div class="proof-banner-grid">
+
+            <div>
+              <div class="proof-badge-stamp">EQUIVALENCIA FUNCIONAL Y CERTEZA PERICIAL</div>
+              <h3 class="proof-title">De la Discusión Subjetiva a la Certeza Probatoria Incorruptible</h3>
+              <p class="proof-desc">
+                Riskmann extingue la controversia transformando la rutina operativa diaria en medios probatorios con
+                plena validez judicial y pericial:
+              </p>
+
+              <div class="proof-pillars-list">
+                <div class="proof-pillar-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" />
+                  </svg>
+                  <span>Timestamp Criptográfico Inalterable</span>
+                </div>
+                <div class="proof-pillar-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                  <span>Georreferenciación GPS Satelital</span>
+                </div>
+                <div class="proof-pillar-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z" />
+                    <circle cx="12" cy="13" r="4" />
+                  </svg>
+                  <span>Fotografías en Vivo con Metadatos Protegidos</span>
+                </div>
+                <div class="proof-pillar-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                    <circle cx="8.5" cy="7" r="4" />
+                    <polyline points="17 11 19 13 23 9" />
+                  </svg>
+                  <span>Resultados de Inspecciones en Tiempo Real</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta de Resolución Específica de Conflictos -->
+            <div class="proof-card-box">
+              <h4
+                style="font-family: var(--font-heading); font-size: 1.15rem; color: var(--color-primary); font-weight: 700; margin-bottom: 12px;">
+                Resolución Concreta de Controversias
+              </h4>
+              <ul
+                style="display: flex; flex-direction: column; gap: 12px; font-size: 0.88rem; color: var(--color-text-body);">
+                <li style="display: flex; align-items: flex-start; gap: 8px;">
+                  <span style="color: var(--color-green); font-weight: 800;">✓</span>
+                  <span><strong>Extinción de "Standby" no comprobable:</strong> El acta digital emitida por la PWA con
+                    GPS y hora
+                    exacta acredita al segundo la falla del carrotanque (llantas lisas o fuga), desestimando de
+                    inmediato la reclamación de flete.</span>
+                </li>
+                <li style="display: flex; align-items: flex-start; gap: 8px;">
+                  <span style="color: var(--color-green); font-weight: 800;">✓</span>
+                  <span><strong>Deslinde de Responsabilidad en Siniestros:</strong> El expediente unificado
+                    (capacitaciones en campus, odómetro real, preoperacional e inducciones) prueba la debida diligencia
+                    de la operadora ante fiscalías y ARL.</span>
+                </li>
+                <li style="display: flex; align-items: flex-start; gap: 8px;">
+                  <span style="color: var(--color-green); font-weight: 800;">✓</span>
+                  <span><strong>Desactivación de Bloqueos Comunitarios:</strong> Reportes periciales del 100% de la
+                    flota acreditada para exhibir ante personerías y líderes comunales, neutralizando denuncias de
+                    inseguridad vial.</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         5. SESIÓN 2: CUMPLIMIENTO OBLIGATORIO DEL PESV Y SU APLICACIÓN EN LA RESOLUCIÓN
+         DE CONFLICTOS EN LA CADENA DE BIENES Y SERVICIOS DEL SECTOR HIDROCARBUROS
+         ========================================================================= -->
+    <section class="section-padding" id="cumplimiento-pesv">
+      <div class="container">
+
+        <div class="section-header-block">
+          <div class="section-tag">
+            <span class="brand-stripe-vertical" style="height: 16px; display: inline-block;"></span>
+            SESIÓN 02 · FUNDAMENTACIÓN NORMATIVA Y APLICACIÓN EN LA CADENA
+          </div>
+          <h2 class="section-heading-main">Cumplimiento Obligatorio del PESV y su Aplicación en la Resolución de
+            Conflictos en la Cadena de Bienes y Servicios de Hidrocarburos</h2>
+          <p class="section-lead-text">
+            El <strong>Plan Estratégico de Seguridad Vial (PESV)</strong>, reglamentado por la <strong>Resolución 40595
+              de 2022 del Ministerio de Transporte</strong> en articulación con la <strong>Ley 1503 de 2011</strong>, la
+            <strong>Ley 2050 de 2020</strong>, el <strong>Decreto Ley 2106 de 2019</strong> y el <strong>Decreto 1072 de
+              2015 (SG-SST)</strong>, dejó de ser un requisito administrativo formal para convertirse en el
+            <strong>marco regulador vinculante</strong> que gobierna técnica, jurídica y pericialmente la contratación,
+            movilización y control de flotas en la industria de petróleo y gas en Colombia.
+          </p>
+        </div>
+
+        <!-- 3 Pilares del Cumplimiento Obligatorio -->
+        <div class="norm-cards-grid">
+
+          <article class="norm-card">
+            <div class="norm-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+                <polyline points="14 2 14 8 20 8" />
+                <line x1="16" y1="13" x2="8" y2="13" />
+                <line x1="16" y1="17" x2="8" y2="17" />
+              </svg>
+            </div>
+            <h3 class="norm-card-title">Sujetos Obligados: Misionalidad 1 y Misionalidad 2</h3>
+            <p class="norm-card-desc">
+              La norma obliga tanto a las <strong>Empresas de Transporte Terrestre Automotor (Misionalidad 1)</strong>
+              como a las <strong>Operadoras E&amp;P, Refinerías, Contratistas de Perforación y Proveedores de
+                Bienes/Servicios (Misionalidad 2)</strong> con más de 10 vehículos o conductores contratados,
+              estableciendo estándares auditables según niveles Básico, Estándar y Avanzado.
+            </p>
+          </article>
+
+          <article class="norm-card accent-red">
+            <div class="norm-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                <circle cx="12" cy="11" r="3" />
+              </svg>
+            </div>
+            <h3 class="norm-card-title">Fin del "Aval en Papel": Autogestión Punitiva</h3>
+            <p class="norm-card-desc">
+              La <strong>Ley 2050 de 2020</strong> eliminó el concepto de favorabilidad o radicación pasiva. El Estado
+              trasladó la carga de la prueba a la <strong>autogestión continua</strong>: ante auditorías sorpresivas de
+              la <strong>Superintendencia de Transporte, MinTrabajo o ARL</strong>, la empresa debe acreditar en el acto
+              el cumplimiento permanente de los 24 pasos, bajo riesgo de sanciones de hasta <strong>1.000
+                SMLMV</strong>.
+            </p>
+          </article>
+
+          <article class="norm-card accent-teal">
+            <div class="norm-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+            </div>
+            <h3 class="norm-card-title">Solidaridad Patronal y Corresponsabilidad Legal</h3>
+            <p class="norm-card-desc">
+              Bajo el <strong>Artículo 216 del Código Sustantivo del Trabajo</strong>, la Guía RUC y el
+              estándar HSE-P-045 de Ecopetrol, las operadoras petroleras son solidariamente responsables por los
+              siniestros viales y omisiones preventivas de sus transportistas si no ejercen una debida diligencia de
+              control estricto e inalterable.
+            </p>
+          </article>
+
+        </div>
+
+
+        <!-- Tabla Comparativa: Régimen Anterior vs. Marco Vigente 40595 vs. Solución Riskmann -->
+        <div style="margin-top: 48px;">
+          <h3
+            style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-primary); margin-bottom: 12px; font-weight: 700;">
+            Evolución del Régimen de Seguridad Vial: Régimen Derogado vs. Marco Vigente vs. Cumplimiento Riskmann
+          </h3>
+          <div class="table-responsive-wrapper">
+            <table class="corporate-table table-regimen">
+              <thead>
+                <tr>
+                  <th style="width: 20%;">Dimensión</th>
+                  <th class="col-old" style="width: 26%;">Régimen Derogado (Res. 1565/2014)</th>
+                  <th class="col-new" style="width: 27%;">Marco Obligatorio Vigente (Res. 40595/2022)</th>
+                  <th class="col-riskmann" style="width: 27%;">Cumplimiento y Solución con Riskmann</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Modelo de Gestión</strong></td>
+                  <td>5 Pilares documentales estáticos en carpetas de archivo.</td>
+                  <td>Ciclo <strong>PHVA dinámico de hasta 24 pasos técnicos</strong> auditables.</td>
+                  <td class="cell-highlight-riskmann">Digitalización e interconexión automatizada de los 24 pasos en la
+                    nube.</td>
+                </tr>
+                <tr>
+                  <td><strong>Validación Legal</strong></td>
+                  <td>Radicación física y espera pasiva de aval de Tránsito.</td>
+                  <td><strong>Autogestión continua, inspección punitiva</strong> y reporte anual obligatorio.</td>
+                  <td class="cell-highlight-riskmann">Cálculo de los 14 indicadores PESV y generación del Reporte de
+                    Autogestión en 1 clic.</td>
+                </tr>
+                <tr>
+                  <td><strong>Inspección Preoperacional</strong></td>
+                  <td>Listas de chequeo en papel, llenadas a posteriori y vulnerables a fraude.</td>
+                  <td>Verificación técnica diaria obligatoria antes de iniciar la marcha (Paso 13).</td>
+                  <td class="cell-highlight-riskmann">PWA móvil offline con GPS satelital, fotos inalterables, sello de
+                    tiempo y alertas automáticas ante fallas.</td>
+                </tr>
+                <tr>
+                  <td><strong>Articulación SG-SST</strong></td>
+                  <td>Programas aislados con duplicidad de formatos y esfuerzos.</td>
+                  <td>Integración indisoluble con el <strong>SG-SST (Decreto 1072/2015)</strong> e ISO 39001.</td>
+                  <td class="cell-highlight-riskmann">Módulo unificado multisede de SG-SST, parametrización jerárquica y
+                    seguimiento de actividades.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         8. SESIÓN 3: EL MÉTODO INFALIBLE DE RISKMANN (CERO ERRORES, CERO SANCIONES)
+         ========================================================================= -->
+    <section class="section-padding" id="metodo-infalible" style="background-color: #F8FAFC;">
+      <div class="container">
+
+        <div class="section-header-block">
+          <div class="section-tag">
+            <span class="brand-stripe-vertical" style="height: 16px; display: inline-block;"></span>
+            SESIÓN 03 · EL MÉTODO INFALIBLE RiskMann
+          </div>
+          <h2 class="section-heading-main">El "Método Infalible": La Fórmula de Cero Errores y Cero Sanciones</h2>
+          <p class="section-lead-text">
+            Desarrollado tras 25 años de experiencia en ingeniería de riesgos y auditoría en Colombia, el <strong>Método
+              Infalible de Riskmann</strong> garantiza que la gestión de seguridad vial y SG-SST opere con rigor
+            matemático y certeza pericial, cerrando las brechas donde habitan las multas administrativas y los
+            siniestros en carretera:
+          </p>
+        </div>
+
+        <div class="method-hero-section">
+          <div style="max-width: 780px;">
+            <div class="section-tag" style="color: #38BDF8;">TRIPLE BLINDAJE CORPORATIVO</div>
+            <h3
+              style="font-family: var(--font-heading); font-size: 1.85rem; font-weight: 800; color: #FFF; line-height: 1.25;">
+              La Convergencia de la Tecnología Móvil y la Eficacia Jurídica
+            </h3>
+            <p style="color: #E2E8F0; font-size: 0.98rem; margin-top: 10px;">
+              Ningún vehículo rueda sin inspección válida; ningún conductor entra a campo sin inducción aprobada; y
+              ninguna auditoría encuentra inconsistencias documentales.
+            </p>
+          </div>
+
+          <div class="method-grid">
+
+            <!-- Pilar 1 -->
+            <div class="method-card">
+              <div class="method-number">01</div>
+              <h4 class="method-title">Cero Errores en Registros</h4>
+              <p class="method-desc">
+                Eliminación total del error humano y la adulteración. La PWA móvil captura sellos de tiempo del servidor
+                (NTP), coordenadas GPS satelitales obligatorias y fotos con metadatos no editables. Se erradican las
+                inspecciones "llenadas de afán en la oficina".
+              </p>
+            </div>
+
+            <!-- Pilar 2 -->
+            <div class="method-card">
+              <div class="method-number">02</div>
+              <h4 class="method-title">Cero Riesgos de Sanción</h4>
+              <p class="method-desc">
+                Cumplimiento pericial continuo de los 24 pasos de la Resolución 40595 de 2022 y del Decreto 1072 de
+                2015. Generación instantánea del expediente probatorio frente a visitas sorpresa de la Superintendencia
+                de Transporte o el Ministerio de Trabajo.
+              </p>
+            </div>
+
+            <!-- Pilar 3 -->
+            <div class="method-card">
+              <div class="method-number">03</div>
+              <h4 class="method-title">Cero Accidentes por Omisión</h4>
+              <p class="method-desc">
+                Bloqueo preventivo en sistema de vehículos con fallas críticas en frenos, llantas o dirección. Alertas
+                automáticas 30, 15 y 5 días antes de vencer SOAT, RTM o licencias, neutralizando causas basales
+                prevenibles antes de despachar la unidad.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         9. SESIÓN 4: LOS MÓDULOS CLAVE DE LA PLATAFORMA RISKMANN
+         ========================================================================= -->
+    <section class="section-padding" id="modulos"
+      style="background-color: #F1F5F9; border-top: 1px solid var(--color-border-subtle); border-bottom: 1px solid var(--color-border-subtle);">
+      <div class="container">
+
+        <div class="section-header-block">
+          <div class="section-tag blue-tag">
+            <span class="brand-stripe-vertical" style="height: 16px; display: inline-block;"></span>
+            SESIÓN 04 · ARQUITECTURA MODULAR INTEGRADA
+          </div>
+          <h2 class="section-heading-main">Módulos Especializados de Alto Impacto Operacional</h2>
+          <p class="section-lead-text">
+            Herramientas interconectadas y diseñadas para soportar la fricción técnica y ambiental del trabajo de campo
+            en petróleo, gas, minería y transporte:
+          </p>
+        </div>
+
+        <div class="modules-grid">
+
+          <!-- Módulo 1: Seguridad Vial y Flota -->
+          <article class="module-card">
+            <div class="module-card-header">
+              <div class="module-title-wrap">
+                <div class="module-icon-wrap">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="1" y="3" width="15" height="13" />
+                    <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+                    <circle cx="5.5" cy="18.5" r="2.5" />
+                    <circle cx="18.5" cy="18.5" r="2.5" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="module-title">Seguridad Vial &amp; Flota</h3>
+                  <div class="module-subtitle">PESV Pasos 12, 13, 14, 15 y 16</div>
+                </div>
+              </div>
+              <span class="brand-meta-badge" style="background: #EBF3FF; color: var(--color-primary);">PWA
+                OFFLINE</span>
+            </div>
+
+            <div class="module-body">
+              <p class="module-description">
+                Control en tiempo real de inspecciones vehiculares preoperacionales ejecutadas desde smartphones Android
+                o iOS, funcionando <strong>100% sin conexión a internet en pozos remotos</strong> y sincronizando
+                automáticamente al recuperar señal.
+              </p>
+
+              <div class="module-features-list">
+                <div class="module-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                  </svg>
+                  <span><strong>Georreferenciación GPS &amp; Timestamp:</strong> Localización precisa donde se realizó
+                    la inspección mecánica.</span>
+                </div>
+                <div class="module-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                  </svg>
+                  <span><strong>Alertas de Vencimiento Inteligentes:</strong> Semáforo para SOAT, RTM, pólizas
+                    contractuales y licencias de conducción.</span>
+                </div>
+                <div class="module-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                  </svg>
+                  <span><strong>Mantenimiento por Odómetro Real:</strong> Cronograma preventivo activado por el
+                    kilometraje real de cada viaje.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="module-metric-footer">
+              <span class="module-metric-label">TIEMPO PROMEDIO INSPECCIÓN:</span>
+              <span class="module-metric-val">3 Minutos</span>
+            </div>
+          </article>
+
+          <!-- Módulo 2: Campus Virtual LMS -->
+          <article class="module-card">
+            <div class="module-card-header">
+              <div class="module-title-wrap">
+                <div class="module-icon-wrap">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                    <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="module-title">Campus Virtual LMS</h3>
+                  <div class="module-subtitle">Formación y Certificación Continua</div>
+                </div>
+              </div>
+              <span class="brand-meta-badge" style="background: #E6F4F5; color: var(--color-teal-sofu);">114+
+                CURSOS</span>
+            </div>
+
+            <div class="module-body">
+              <p class="module-description">
+                LMS corporativo propio con <strong>más de 114 cursos especializados estructurados por tipologías de
+                  riesgo</strong> (seguridad vial, manejo defensivo, fatiga, hidrocarburos y
+                sustancias peligrosas).
+              </p>
+
+              <div class="module-features-list">
+                <div class="module-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                  </svg>
+                  <span><strong>Evaluaciones con Banco Aleatorio:</strong> Exámenes en servidor que previenen respuestas
+                    repetitivas o fraude.</span>
+                </div>
+                <div class="module-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                  </svg>
+                  <span><strong>Certificados con Código ID Único:</strong> Validación instantánea a través de la
+                    plataforma para evitar falsificación.</span>
+                </div>
+                <div class="module-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                  </svg>
+                  <span><strong>Exportación Inmediata a Excel:</strong> Planillas estructuradas listas para reportar a
+                    la ARL o entes de control.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="module-metric-footer">
+              <span class="module-metric-label">EFECTIVIDAD DE APRENDIZAJE:</span>
+              <span class="module-metric-val">100% Auditable</span>
+            </div>
+          </article>
+
+          <!-- Módulo 3: Plan Anual de SG-SST -->
+          <article class="module-card">
+            <div class="module-card-header">
+              <div class="module-title-wrap">
+                <div class="module-icon-wrap">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+                    <polyline points="14 2 14 8 20 8" />
+                    <line x1="16" y1="13" x2="8" y2="13" />
+                    <line x1="16" y1="17" x2="8" y2="17" />
+                    <polyline points="10 9 9 9 8 9" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="module-title">Plan Anual de SG-SST</h3>
+                  <div class="module-subtitle">Decreto 1072 de 2015 Parametrizado</div>
+                </div>
+              </div>
+              <span class="brand-meta-badge"
+                style="background: var(--color-red-light); color: var(--color-red);">MULTISEDE</span>
+            </div>
+
+            <div class="module-body">
+              <p class="module-description">
+                Estructuración, control y seguimiento de actividades e indicadores del plan anual de trabajo en
+                seguridad y salud.
+              </p>
+
+              <div class="module-features-list">
+                <div class="module-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                  </svg>
+                  <span><strong>Consolidación:</strong> El panel Estadístico consolida métricas de gestión, indicadores
+                    clave (KPI´s) y el resumen gerencial.</span>
+                </div>
+                <div class="module-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                  </svg>
+                  <span><strong>Parametrización:</strong> Administra los elementos jerárquicos, iniciativas, propósitos
+                    e indicadores del sistema.</span>
+                </div>
+                <div class="module-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                  </svg>
+                  <span><strong>Control de No Conformidades:</strong> Planes de acción inmediatos para hallazgos de ARL
+                    y auditorías RUC.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="module-metric-footer">
+              <span class="module-metric-label">REDUCCIÓN CARGA ADMINISTRATIVA:</span>
+              <span class="module-metric-val">-70% Horas Oficina</span>
+            </div>
+          </article>
+
+          <!-- Módulo 4: 14 Indicadores PESV y Reporte en 1 Clic -->
+          <article class="module-card">
+            <div class="module-card-header">
+              <div class="module-title-wrap">
+                <div class="module-icon-wrap">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="20" x2="18" y2="10" />
+                    <line x1="12" y1="20" x2="12" y2="4" />
+                    <line x1="6" y1="20" x2="6" y2="14" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="module-title">Indicadores PESV &amp; Reporte</h3>
+                  <div class="module-subtitle">Automatización Mintransporte</div>
+                </div>
+              </div>
+              <span class="brand-meta-badge" style="background: #EBF3FF; color: var(--color-primary);">1 CLIC</span>
+            </div>
+
+            <div class="module-body">
+              <p class="module-description">
+                Motor analítico que calcula los <strong>14 indicadores obligatorios del PESV</strong>
+                (resultado, actividad e impacto) y consolida el <strong>Reporte Anual de Autogestión</strong> exigido
+                antes del 31 de enero de cada vigencia.
+              </p>
+
+              <div class="module-features-list">
+                <div class="module-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                  </svg>
+                  <span><strong>Cálculo Automático en Servidor:</strong> Cero fórmulas rotas de Excel ni inconsistencias
+                    estadísticas.</span>
+                </div>
+                <div class="module-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                  </svg>
+                  <span><strong>Reporte Oficial al Instante:</strong> Descarga consolidada lista para radicación ante
+                    entidades de inspección.</span>
+                </div>
+                <div class="module-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                  </svg>
+                  <span><strong>Tableros Gerenciales en Vivo:</strong> Visualización gráfica del desempeño de flotas
+                    propias y tercerizadas.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="module-metric-footer">
+              <span class="module-metric-label">GENERACIÓN REPORTE ANUAL:</span>
+              <span class="module-metric-val">1 Clic</span>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         10. SESIÓN 5: BENEFICIOS DIFERENCIALES & MÉTRICAS CORPORATIVAS
+         ========================================================================= -->
+    <section class="section-padding" id="beneficios">
+      <div class="container">
+
+        <div class="section-header-block">
+          <div class="section-tag teal-tag">
+            <span class="brand-stripe-vertical" style="height: 16px; display: inline-block;"></span>
+            SESIÓN 05 · PROPUESTA DE VALOR CORPORATIVA
+          </div>
+          <h2 class="section-heading-main">Beneficios Diferenciales y Confianza Institucional SOFU</h2>
+          <p class="section-lead-text">
+            Respaldado por la experiencia de <strong>SOFU BIC S.A.S.</strong>, RiskMann combina tecnología de punta con
+            profundo conocimiento del marco legal colombiano:
+          </p>
+        </div>
+
+        <!-- Banner de Métricas Animadas -->
+        <div class="metrics-corporate-banner">
+          <div class="metrics-grid">
+
+            <div class="metric-stat-item">
+              <div class="metric-number-big counter-animate" data-target="1230" data-prefix="+">+1.230</div>
+              <div class="metric-label-clean">Organizaciones aliadas y protegidas en Colombia</div>
+            </div>
+
+            <div class="metric-stat-item">
+              <div class="metric-number-big counter-animate" data-target="25" data-suffix="+ Años">25+ Años</div>
+              <div class="metric-label-clean">Experiencia acumulada en gestión de riesgos (SOFU)</div>
+            </div>
+
+            <div class="metric-stat-item">
+              <div class="metric-number-big counter-animate" data-target="100" data-suffix="% Nube">100% Nube</div>
+              <div class="metric-label-clean">Infraestructura Google Cloud de alta disponibilidad</div>
+            </div>
+
+            <div class="metric-stat-item">
+              <div class="metric-number-big counter-animate" data-target="14" data-suffix=" Indicadores">14 Indicadores
+              </div>
+              <div class="metric-label-clean">Cálculo matemático automático en tiempo real</div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 3 Ventajas Tecnológicas Clave -->
+        <div class="norm-cards-grid" style="margin-top: 32px;">
+
+          <div class="norm-card">
+            <div class="norm-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z" />
+              </svg>
+            </div>
+            <h4 class="norm-card-title">Cero Servidores Locales</h4>
+            <p class="norm-card-desc">
+              Despliegue <strong>100% en la nube</strong> con redundancia geográfica, copias de
+              seguridad continuas y cifrado de extremo a extremo. Su empresa no invierte en servidores ni licencias
+              on-premise.
+            </p>
+          </div>
+
+          <div class="norm-card accent-teal">
+            <div class="norm-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+                <polyline points="14 2 14 8 20 8" />
+                <line x1="8" y1="13" x2="16" y2="13" />
+                <line x1="8" y1="17" x2="16" y2="17" />
+              </svg>
+            </div>
+            <h4 class="norm-card-title">Exportación Ágil a Excel</h4>
+            <p class="norm-card-desc">
+              Toda la información y los consolidados de auditoría se exportan a archivos de Microsoft Excel en un
+              segundo con diseño corporativo limpio, facilitando requerimientos de comités HSEQ.
+            </p>
+          </div>
+
+          <div class="norm-card accent-red">
+            <div class="norm-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+              </svg>
+            </div>
+            <h4 class="norm-card-title">Soporte Técnico en Español</h4>
+            <p class="norm-card-desc">
+              Acompañamiento por ingenieros especialistas en seguridad vial y legislación laboral colombiana. Mesa de
+              ayuda resolutiva que comprende la urgencia de despachar vehículos en campos petroleros.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       12. FOOTER CORPORATIVO INSTITUCIONAL UNIFICADO
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div>
+          <div class="footer-brand-title">RiskMann by SOFU BIC S.A.S.</div>
+          <p class="footer-brand-desc">
+            Plataforma tecnológica líder en gestión integral del riesgo operacional, cumplimiento riguroso del PESV
+            (Resolución 40595 de 2022) y SG-SST (Decreto 1072 de 2015) para el sector hidrocarburos, minería, transporte
+            e industria en Colombia.
+          </p>
+          <div style="display: flex; gap: 12px; align-items: center; margin-top: 16px;">
+            <span class="brand-meta-badge"
+              style="background: rgba(255,255,255,0.1); color: #FFF; border-color: rgba(255,255,255,0.2);">SOCIEDAD
+              BIC</span>
+            <span class="brand-meta-badge"
+              style="background: rgba(255,255,255,0.1); color: #FFF; border-color: rgba(255,255,255,0.2);">GOOGLE
+              CLOUD</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-heading">Navegación del Portafolio</div>
+          <div class="footer-links-list">
+            <a href="#solucion-riskmann">1. Blindaje Probatorio (Ley 527)</a>
+            <a href="#cumplimiento-pesv">2. Cumplimiento PESV &amp; Cadena</a>
+            <a href="#metodo-infalible">3. El Método Infalible</a>
+            <a href="#modulos">4. Módulos de Plataforma</a>
+            <a href="#beneficios">5. Beneficios &amp; Métricas SOFU</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-heading">Información Institucional</div>
+          <div class="footer-links-list">
+            <p style="font-size: 0.88rem; color: #CBD5E1;">
+              <strong>Atención Institucional:</strong><br>
+              <a href="mailto:riskmann@sofu.com.co" style="color: #38BDF8;">riskmann@sofu.com.co</a>
+            </p>
+            <p style="font-size: 0.88rem; color: #CBD5E1; margin-top: 10px;">
+              <strong>Portal Web Oficial:</strong><br>
+              <a href="https://riskmann.com" target="_blank" style="color: #FFFFFF;">riskmann.com</a>
+            </p>
+            <p style="font-size: 0.88rem; color: #CBD5E1; margin-top: 10px;">
+              <strong>Desarrollador:</strong><br>
+              <span style="color: #FFFFFF;">SOFU BIC S.A.S. — Yopal, Colombia</span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 SOFU BIC S.A.S. Todos los derechos reservados. Riskmann es marca registrada.
+        </div>
+        <div style="display: flex; gap: 20px;">
+          <span>Seguridad Vial y SG-SST</span>
+          <span>·</span>
+          <span>Eficacia Probatoria Ley 527/99</span>
+          <span>·</span>
+          <span>Google Cloud Platform</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón Volver Arriba -->
+  <button class="back-to-top" id="back-to-top" aria-label="Volver arriba">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <path d="M18 15l-6-6-6 6" />
+    </svg>
+  </button>
+
+  <!-- Archivo JavaScript Corporativo -->
+  <script src="script.js"></script>
+</body>
+
+</html>
